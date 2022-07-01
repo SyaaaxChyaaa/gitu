@@ -4,20 +4,20 @@ const chalk = require('chalk');
 const rs = require('readline-sync');
 const delay = require('delay');
 
-const GoStumble = (code, auth) => new Promise((resolve, reject) => {
+const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-    fetch(`http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
-        method: 'GET',
-        headers: {
-            'authorization': auth
-        }
-    })
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
+    method: 'GET',
+    headers: {
+      'authorization': auth
+    }
+  })
     .then(res => res.text())
-    .then(data=> {
-        resolve(data);
+    .then(data => {
+      resolve(data);
     })
     .catch(err => {
-        reject(err);
+      reject(err);
     });
 
 });
