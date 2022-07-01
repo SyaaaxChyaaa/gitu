@@ -50,7 +50,7 @@ while (true) {
       const crown = data.User.Crowns;
 
 console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.green(`User : ${username}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)} | ${chalk.green(`Exp : ${exp}`)} | ${chalk.blue(`Country : ${country}`)}`));
-      await delay(3500);
+      await delay(3000);
 
        } else if (result == 'BANNED') {
         console.log(chalk.bgRed(`Akunlu Keban Titit Makanya Ga Ush Ngescript 🤬🤬🤬🤬`));
