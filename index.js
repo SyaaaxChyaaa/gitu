@@ -49,14 +49,8 @@ while (true) {
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-[${moment().format('HH:mm:ss')}]  -
-${chalk.bgRed(`Country By Rexxy : ${country}`)}
-${chalk.bgGreen(`Nickname By Rexxy : ${username}`)}
-${chalk.bgBlue(`Exp By Rexxy: ${exp}`)}  
-${chalk.bgRed(`Trophy By Rexxy : ${trophy}`)}  
-${chalk.bgGreen(`Crown By Rexxy : ${crown}`)}
-${chalk.bgBlue(`Status : ✔ Success`)}`);
-        await delay(3500);
+console.log(chalk.bgRed(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.bgGreen(`User : ${username}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.bgRed(`Crown : ${crown}`)} | ${chalk.bgGreen(`Exp : ${experience}`)} | ${chalk.blue(`tokenPass : ${passtokens}`)}`));
+      await delay(3500);
 
        } else if (result == 'BANNED') {
         console.log(chalk.bgRed(`Akunlu Keban Titit Makanya Ga Ush Ngescript 🤬🤬🤬🤬`));
