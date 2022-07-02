@@ -49,7 +49,7 @@ while (true) {
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.green(`User : ${username}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)} | ${chalk.green(`Exp : ${exp}`)} | ${chalk.blue(`Country : ${country}`)}`));
+console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.green(`User : ${username}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)} | ${chalk.green(`Exp : ${exp}`)} | ${chalk.blue(`Country : ${country}`)} | ${chalk.bgGreen(`StarPass : ${tokenPass}`)}`))
       await delay(3000);
 
        } else if (result == 'BANNED') {
